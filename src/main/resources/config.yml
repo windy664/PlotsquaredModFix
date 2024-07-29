@@ -1,0 +1,5 @@
+enabledWorlds:
+  - plot
+
+messages:
+  cannotUseRightClick: "You cannot interact here!"

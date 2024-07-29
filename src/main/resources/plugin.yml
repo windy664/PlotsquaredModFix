@@ -1,0 +1,5 @@
+name: PlotsQuaredModFix
+version: '1.0-SNAPSHOT'
+main: org.windy.plotsQuaredModFix.PlotsQuaredModFix
+api-version: '1.20'
+softdepend: [PlaceholderAPI]
