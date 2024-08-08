@@ -44,6 +44,14 @@ public final class PlotsQuaredModFix extends JavaPlugin implements Listener {
                 if (player.isOp()) {
                     return;
                 }
+
+                    if (event.getPlayer().getName().toUpperCase().contains("AS-FAKEPLAYER") || 
+      event.getPlayer().getName().toUpperCase().contains("[MINECRAFT]") || 
+      event.getPlayer().getName().toUpperCase().contains("[MEKANISM]") || 
+      event.getPlayer().getName().toUpperCase().contains("[IF]")) {
+      return;
+    }
+                
                 // 使用PAPI检查占位符的值
                 String canBuildPlaceholder = PlaceholderAPI.setPlaceholders(player, "%plotsquared_currentplot_can_build%");
                 boolean canBuild = Boolean.parseBoolean(canBuildPlaceholder);
